@@ -52,7 +52,7 @@ void calcOptValueOnCPU(const double *_boxes, int _numBoxes, int _rank, void (*_f
 	double *funBounds = new double[3*maxArrayLen];
 	const int splitCoeff = 2;
 
-	const int nt = 8;
+	const int nt = 32;
 	const int size_b = maxArrayLen/ nt + 1;
 	double *ar[nt];
 	double *argmin[nt];
